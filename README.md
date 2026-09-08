@@ -178,5 +178,5 @@ các thay đổi thực tế trong quá trình làm đồ án.
 
 ## 10. Tác giả
 
-- Sinh viên: Mai Thị Trúc Đào
+- Sinh viên: Phạm lữ anh khoa
 - Đề tài: Xây dựng phần mềm quản lý chứng chỉ tại Trung tâm Tin học Ánh Dương
