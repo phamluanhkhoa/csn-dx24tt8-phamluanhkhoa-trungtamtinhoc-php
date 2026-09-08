@@ -1,121 +1,59 @@
-Xây dựng phần mềm quản lý chứng chỉ tại Trung tâm Tin học Ánh Dương
+# Phần mềm quản lý chứng chỉ tại Trung tâm Tin học Ánh Dương
 
-1. Giới thiệu
+## 1. Giới thiệu
 
-Phần mềm quản lý chứng chỉ tại Trung tâm Tin học Ánh Dương là hệ thống được xây dựng nhằm hỗ trợ trung tâm quản lý tập trung thông tin học viên và chứng chỉ.
+Đây là đồ án xây dựng phần mềm quản lý chứng chỉ tại Trung tâm Tin học Ánh Dương.
+Hệ thống được xây dựng bằng PHP và MySQL, hỗ trợ quản lý dữ liệu học viên,
+quản lý chứng chỉ, tra cứu nhanh và thống kê.
 
-Phần mềm giúp giảm thao tác quản lý thủ công, hỗ trợ tra cứu nhanh và cung cấp số liệu thống kê phục vụ công tác quản lý.
+## 2. Mục tiêu
 
-2. Mục tiêu đề tài
+- Quản lý thông tin học viên tập trung.
+- Quản lý thông tin chứng chỉ của học viên.
+- Tra cứu học viên/chứng chỉ nhanh chóng.
+- Theo dõi tình trạng chứng chỉ.
+- Thống kê số lượng học viên và chứng chỉ.
+- Hạn chế việc quản lý thủ công bằng sổ sách hoặc bảng tính rời rạc.
 
-Quản lý thông tin học viên một cách tập trung.
+## 3. Chức năng chính
 
-Quản lý thông tin chứng chỉ đã cấp cho học viên.
+### Quản lý học viên
+- Xem danh sách học viên.
+- Thêm học viên.
+- Sửa thông tin học viên.
+- Xóa học viên.
+- Tìm kiếm theo mã, họ tên, email hoặc số điện thoại.
 
-Tra cứu học viên và chứng chỉ nhanh chóng.
+### Quản lý chứng chỉ
+- Xem danh sách chứng chỉ.
+- Thêm chứng chỉ.
+- Sửa thông tin chứng chỉ.
+- Xóa chứng chỉ.
+- Liên kết chứng chỉ với học viên.
+- Tìm kiếm theo mã chứng chỉ, tên học viên, loại chứng chỉ.
 
-Theo dõi tình trạng chứng chỉ: đã cấp, hết hạn.
+### Thống kê
+- Tổng số học viên.
+- Tổng số chứng chỉ.
+- Số chứng chỉ theo loại.
+- Số chứng chỉ theo trạng thái.
 
-Thống kê số lượng học viên và chứng chỉ.
+## 4. Công nghệ sử dụng
 
-Hỗ trợ cán bộ trung tâm trong quá trình cập nhật và quản lý dữ liệu.
+- PHP 8.x
+- MySQL 8.x / MariaDB
+- PDO
+- HTML5
+- CSS3
+- JavaScript
+- XAMPP
+- Git/GitHub
 
-3. Chức năng chính
+## 5. Cấu trúc thư mục
 
-3.1. Dashboard
-
-Hiển thị tổng số học viên.
-
-Hiển thị tổng số chứng chỉ.
-
-Thống kê số chứng chỉ đã cấp.
-
-Thống kê số chứng chỉ hết hạn.
-
-Truy cập nhanh đến các chức năng quản lý.
-
-3.2. Quản lý học viên
-
-Xem danh sách học viên.
-
-Thêm học viên.
-
-Chỉnh sửa thông tin học viên.
-
-Xóa học viên.
-
-Tìm kiếm học viên theo mã, họ tên, email hoặc số điện thoại.
-
-Quản lý mã học viên, họ tên, ngày sinh, giới tính, số điện thoại, email và địa chỉ.
-
-3.3. Quản lý chứng chỉ
-
-Xem danh sách chứng chỉ.
-
-Thêm chứng chỉ.
-
-Chỉnh sửa thông tin chứng chỉ.
-
-Xóa chứng chỉ.
-
-Liên kết chứng chỉ với học viên.
-
-Tìm kiếm theo mã chứng chỉ, học viên và loại chứng chỉ.
-
-Theo dõi ngày cấp, ngày hết hạn, điểm số và trạng thái chứng chỉ.
-
-3.4. Thống kê
-
-Thống kê tổng số học viên.
-
-Thống kê tổng số chứng chỉ.
-
-Thống kê chứng chỉ theo loại.
-
-Thống kê chứng chỉ theo trạng thái.
-
-4. Công nghệ sử dụng
-
-Thành phần
-
-Công nghệ
-
-Ngôn ngữ lập trình
-
-PHP 8.x
-
-Cơ sở dữ liệu
-
-MySQL / MariaDB
-
-Kết nối CSDL
-
-PDO
-
-Giao diện
-
-HTML5, CSS3
-
-Xử lý phía trình duyệt
-
-JavaScript
-
-Môi trường chạy
-
-XAMPP
-
-Quản lý mã nguồn
-
-Git / GitHub
-
-5. Cấu trúc thư mục
-
+```text
 quan-ly-chung-chi-anh-duong/
-├── admin/
-│   ├── index.php
-│   ├── hocvien/
-│   ├── chungchi/
-│   └── thongke/
+├── README.md
 ├── config/
 │   └── database.php
 ├── database/
@@ -124,137 +62,121 @@ quan-ly-chung-chi-anh-duong/
 │   ├── header.php
 │   └── footer.php
 ├── public/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── app.js
-├── progress-report/
-│   ├── README.md
-│   ├── Tuan01_Mau_BaoCaoTienDo.md
-│   ├── Tuan02_Mau_BaoCaoTienDo.md
-│   ├── Tuan03_Mau_BaoCaoTienDo.md
-│   └── Tuan04_Mau_BaoCaoTienDo.md
-├── .gitignore
-├── PROJECT_NOTES.md
-└── README.md
+│   ├── css/style.css
+│   └── js/app.js
+├── admin/
+│   ├── index.php
+│   ├── hocvien/
+│   ├── chungchi/
+│   └── thongke/
+└── progress-report/
+    ├── README.md
+    ├── Tuan01_Mau_BaoCaoTienDo.md
+    ├── Tuan02_Mau_BaoCaoTienDo.md
+    ├── Tuan03_Mau_BaoCaoTienDo.md
+    └── Tuan04_Mau_BaoCaoTienDo.md
+```
 
-6. Cài đặt và chạy chương trình
+## 6. Cài đặt
 
-Bước 1: Cài đặt XAMPP
+### Bước 1: Cài XAMPP
 
-Cài XAMPP và khởi động:
+Cài XAMPP, sau đó khởi động Apache và MySQL.
 
-Apache
+### Bước 2: Copy project
 
-MySQL
+Đặt thư mục project vào:
 
-Bước 2: Đưa source code vào XAMPP
+```text
+C:/xampp/htdocs/quan-ly-chung-chi-anh-duong/
+```
 
-Copy thư mục project vào:
-
-C:\xampp\htdocs\quan-ly-chung-chi-anh-duong
-
-Bước 3: Tạo cơ sở dữ liệu
-
-Mở phpMyAdmin:
-
-http://localhost/phpmyadmin
-
-Import file:
-
-database/database.sql
-
-Tên cơ sở dữ liệu:
-
-quan_ly_chung_chi
-
-Bước 4: Kiểm tra cấu hình kết nối
+### Bước 3: Tạo cơ sở dữ liệu
 
 Mở:
 
+```text
+http://localhost/phpmyadmin
+```
+
+Tạo/import cơ sở dữ liệu bằng file:
+
+```text
+database/database.sql
+```
+
+Tên database mặc định:
+
+```text
+quan_ly_chung_chi
+```
+
+### Bước 4: Kiểm tra kết nối
+
+Mở:
+
+```text
 config/database.php
+```
 
-Cấu hình mặc định dành cho XAMPP:
+Thông số mặc định dành cho XAMPP:
 
+```text
 Host: localhost
 Database: quan_ly_chung_chi
 Username: root
 Password: rỗng
+```
 
-Bước 5: Chạy chương trình
+Nếu máy bạn dùng thông số khác thì sửa lại file này.
 
-Mở trình duyệt:
+### Bước 5: Chạy chương trình
 
+Truy cập:
+
+```text
 http://localhost/quan-ly-chung-chi-anh-duong/admin/
+```
 
-7. Dữ liệu mẫu
+## 7. Dữ liệu mẫu
 
-Cơ sở dữ liệu có sẵn dữ liệu mẫu để kiểm tra:
+File `database/database.sql` có sẵn một số dữ liệu mẫu để kiểm tra:
+- Học viên.
+- Loại chứng chỉ.
+- Chứng chỉ.
 
-4 học viên.
+Khi triển khai thực tế, thay dữ liệu mẫu bằng dữ liệu của trung tâm.
 
-4 chứng chỉ.
+## 8. Tiến độ đồ án
 
-Các trạng thái chứng chỉ khác nhau.
+Báo cáo tiến độ được lưu tại thư mục `progress-report/`.
 
-Dữ liệu mẫu phục vụ mục đích kiểm thử và có thể thay thế bằng dữ liệu thực tế.
+Theo yêu cầu của đồ án, mỗi tuần cần:
+1. Cập nhật báo cáo tiến độ.
+2. Cập nhật README nếu có thay đổi đáng kể.
+3. Commit các thay đổi lên GitHub.
 
-8. Tiến độ thực hiện
+> Các file báo cáo trong thư mục `progress-report` là mẫu/khung để sinh viên
+> cập nhật bằng tiến độ thực tế trước khi nộp.
 
-Thư mục progress-report/ được sử dụng để lưu báo cáo tiến độ theo từng tuần.
+## 9. Lịch sử commit đề nghị
 
-Trong quá trình thực hiện đồ án:
+```text
+Initial project structure
+Create database schema and sample data
+Build student management
+Build certificate management
+Build certificate search
+Build statistics dashboard
+Improve UI and validation
+Testing and bug fixes
+Update README and final documentation
+```
 
-Cập nhật báo cáo tiến độ.
+Không nên tạo commit giả cho những công việc chưa thực hiện. Hãy commit theo đúng
+các thay đổi thực tế trong quá trình làm đồ án.
 
-Cập nhật README khi có thay đổi quan trọng.
+## 10. Tác giả
 
-Commit các thay đổi lên GitHub.
-
-Duy trì lịch sử commit phản ánh quá trình phát triển thực tế.
-
-Báo cáo tiến độ và lịch sử commit cần phản ánh đúng công việc đã thực hiện.
-
-9. Kiểm thử
-
-Các chức năng cần kiểm thử:
-
-Thêm, sửa, xóa và tìm kiếm học viên.
-
-Thêm, sửa, xóa và tìm kiếm chứng chỉ.
-
-Liên kết chứng chỉ với học viên.
-
-Hiển thị đúng trạng thái chứng chỉ.
-
-Hiển thị đúng số liệu trên Dashboard.
-
-Hiển thị đúng số liệu thống kê.
-
-Kiểm tra kết nối PHP với MySQL.
-
-Kiểm tra giao diện trên trình duyệt.
-
-10. Hướng phát triển
-
-Đăng nhập và phân quyền người dùng.
-
-In chứng chỉ.
-
-Xuất dữ liệu ra Excel/PDF.
-
-Tìm kiếm nâng cao.
-
-Biểu đồ thống kê trực quan.
-
-Sao lưu và phục hồi dữ liệu.
-
-Triển khai hệ thống trên máy chủ.
-
-11. Tác giả
-
-Sinh viên: Phạm Lữ Anh Khoa
-
-Đề tài: Xây dựng phần mềm quản lý chứng chỉ tại Trung tâm Tin học Ánh Dương
-
-Trung tâm Tin học Ánh Dương — Phần mềm quản lý chứng chỉ
+- Sinh viên: Mai Thị Trúc Đào
+- Đề tài: Xây dựng phần mềm quản lý chứng chỉ tại Trung tâm Tin học Ánh Dương
