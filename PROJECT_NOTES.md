@@ -1,26 +1,31 @@
 # Ghi chú triển khai
 
-Đây là bộ project khởi đầu có thể chạy trên XAMPP.
-
-## Kiểm tra nhanh
-
-1. Apache + MySQL đang chạy.
-2. Import `database/database.sql`.
-3. Đặt project trong `htdocs`.
-4. Mở `/admin/`.
-
 ## Phạm vi hiện tại
 
 - Dashboard.
 - CRUD học viên.
 - CRUD chứng chỉ.
-- Tìm kiếm học viên.
-- Tìm kiếm chứng chỉ.
+- Tìm kiếm học viên/chứng chỉ.
 - Thống kê.
+- Giao diện quản trị responsive.
+
+## Đường dẫn chạy trên XAMPP
+
+```text
+http://localhost/quan-ly-chung-chi-anh-duong/scr/admin/
+```
+
+## Database
+
+- Tên: `quan_ly_chung_chi`
+- Host: `localhost`
+- User: `root`
+- Password: rỗng (cấu hình XAMPP mặc định)
+- File cài đặt: `setup/database/database.sql`
 
 ## Có thể mở rộng
 
-- Đăng nhập/phân quyền.
+- Đăng nhập và phân quyền.
 - Xuất Excel/PDF.
 - In chứng chỉ.
 - Upload ảnh/chữ ký.
