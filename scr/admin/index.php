@@ -19,6 +19,9 @@ $recent = $pdo->query("SELECT c.certificate_code, c.certificate_type, c.issue_da
             <a class="btn secondary" href="chungchi/form.php">＋ Thêm chứng chỉ</a>
         </div>
     </div>
+    <div class="hero-art">
+        <img src="/quan-ly-chung-chi-anh-duong/scr/public/images/hero-dashboard.svg" alt="Minh họa hệ thống quản lý chứng chỉ">
+    </div>
 </section>
 
 <div class="grid grid-4">
@@ -43,6 +46,24 @@ $recent = $pdo->query("SELECT c.certificate_code, c.certificate_type, c.issue_da
         <div class="stat-note">Cần theo dõi</div>
     </div>
 </div>
+
+<section class="visual-section">
+    <div class="section-head visual-head"><div><span class="eyebrow">KHÔNG GIAN LÀM VIỆC</span><h2>Quản lý trực quan, thao tác nhanh</h2></div><span class="live-pill"><span></span> Hệ thống đang hoạt động</span></div>
+    <div class="visual-grid">
+        <a class="visual-card" href="hocvien/">
+            <img src="/quan-ly-chung-chi-anh-duong/scr/public/images/students.svg" alt="Quản lý học viên">
+            <div class="visual-overlay"><strong>Học viên</strong><span>Hồ sơ tập trung & dễ tra cứu →</span></div>
+        </a>
+        <a class="visual-card" href="chungchi/">
+            <img src="/quan-ly-chung-chi-anh-duong/scr/public/images/certificate.svg" alt="Quản lý chứng chỉ">
+            <div class="visual-overlay"><strong>Chứng chỉ</strong><span>Cấp, cập nhật và theo dõi →</span></div>
+        </a>
+        <a class="visual-card" href="thongke/">
+            <img src="/quan-ly-chung-chi-anh-duong/scr/public/images/statistics.svg" alt="Thống kê">
+            <div class="visual-overlay"><strong>Thống kê</strong><span>Nắm bắt số liệu nhanh chóng →</span></div>
+        </a>
+    </div>
+</section>
 
 <div class="grid grid-2" style="margin-top:18px">
     <section class="card">
